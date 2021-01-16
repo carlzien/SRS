@@ -1,7 +1,10 @@
-<html>
-
 <head>
-  <title>Firebase Basic Example</title>
+  <meta charset="utf-8">
+  <title>Firebase</title>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- including FusionCharts core package JS files -->
   <script src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
   <link rel="stylesheet" href="assets/css/main.css">
@@ -11,20 +14,6 @@
   <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
   <script src="assets/scripts/app.js"></script>
   <script>
-  <!-- Add Firebase project configuration object here -->
-    var firebaseConfig = {
-    apiKey: "AIzaSyAC41MzXxfGc454yAejNKXEsxCPO-MDU14",
-    authDomain: "prototype1-2f3af.firebaseapp.com",
-    databaseURL: "https://prototype1-2f3af-default-rtdb.firebaseio.com",
-    projectId: "prototype1-2f3af",
-    storageBucket: "prototype1-2f3af.appspot.com",
-    messagingSenderId: "541074010963",
-    appId: "1:541074010963:web:540052084ec548fb99e7a6",
-    measurementId: "G-TLQS7R75CX"
-    };
-    
-    firebase.initializeApp(firebaseConfig)
-
     window.addEventListener("load", getData(genFunction));
 
     function getData(callbackIN) {
@@ -105,7 +94,34 @@
 </head>
 
 <body>
-  <div id="chart-container"><svg width="90px"  height="90px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-rolling" style="background: none;"><circle cx="50" cy="50" fill="none" ng-attr-stroke="{{config.color}}" ng-attr-stroke-width="{{config.width}}" ng-attr-r="{{config.radius}}" ng-attr-stroke-dasharray="{{config.dasharray}}" stroke="#6ac1a5" stroke-width="9" r="33" stroke-dasharray="155.50883635269477 53.83627878423159" transform="rotate(324 50 50)"><animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animateTransform></circle></svg></div>
+<div id="app">
+ 
+  <!-- <img src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/firestore.png?alt=media&token=56d039dc-4a6c-477b-a153-a4bb8234646f" /> -->
+  <!-- <img src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/hosting.png?alt=media&token=57c8adb6-08c4-43f7-9395-4c299896a36c" /> -->
+  <img src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/codelab.png?alt=media&token=f45f808c-ce40-4b34-944c-8d8fac00e13d" />
+
+ <section id="event-details-container">
+      <h1>Smart Recycle System</h1>
+
+       <p><i class="material-icons">perm_identity</i> Orson Su, Yushan Wu & Yaohong Zeng</p>
+      <p><i class="material-icons">location_city</i> Taiwan</p>
+      <button id="startRsvp">RSVP</button>
+  </section>
+
+  <hr>
+
+  <section id="firebaseui-auth-container"></section>
+
+  <section id="description-container">
+      <h2>Measuring Garbage</h2>
+      <p>Cheap, easy, smart way to do it!</p>
+  </section>
+
+  
+  
+}
+
+</div>
 </body>
 
-</html>
+
